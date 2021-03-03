@@ -10,7 +10,7 @@
 export ANDROID_HOME=~/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
 export LD_LIBRARY_PATH=$ANDROID_HOME/emulator/lib64
-cp $STUDENT/application.apk /home/codegrade/application.apk
+#cp $STUDENT/application.apk /home/codegrade/application.apk
 cd
 adb start-server
 adb devices
