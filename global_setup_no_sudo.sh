@@ -43,8 +43,8 @@ export AVD_VERSION=25
 #
 echo "installing image..."
 ls $ANDROID_HOME
-ls $ANDROID_HOME/tools
-ls $ANDROID_HOME/tools/android
+ls $ANDROID_HOME/tools/
+ls $ANDROID_HOME/tools/android/
 
 echo y | $ANDROID_HOME/tools/android -s create avd --force --name android-$AVD_VERSION --target android-$AVD_VERSION \
   --device "Nexus S" --name "nexus" --abi "google_apis/x86" --skin WVGA800 >/dev/null
