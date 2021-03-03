@@ -26,7 +26,7 @@ npm install --silent -y --save-dev \
 export AVD_VERSION=25
 #export ANDROID_BUILD_TOOLS_VERSION=25.0.3 
 #export SDK_VERSION=25.2.3
-export ANDROID_HOME=/usr/local/lib/android/sdk/
+export ANDROID_HOME=/usr/local/lib/android/sdk
 #mkdir -p $ANDROID_HOME
 #cd $ANDROID_HOME
 #wget -q -O tools.zip https://dl.google.com/android/repository/tools_r${SDK_VERSION}-linux.zip > /dev/null && \
@@ -42,6 +42,6 @@ export ANDROID_HOME=/usr/local/lib/android/sdk/
 #echo y | ${ANDROID_HOME}/tools/android -s update sdk --all --force --no-ui --filter android-$AVD_VERSION,sys-img-x86-google_apis-$AVD_VERSION > /dev/null 
 #
 
-echo y | {$ANDROID_HOME}/tools/android -s create avd --force --name android-$AVD_VERSION --target android-$AVD_VERSION \
+echo y | ${ANDROID_HOME}/tools/android -s create avd --force --name android-$AVD_VERSION --target android-$AVD_VERSION \
   --device "Nexus S" --name "nexus" --abi "google_apis/x86" --skin WVGA800 >/dev/null
 #  --device "Nexus S" --name "nexus" --abi "default/x86" --skin WVGA800
