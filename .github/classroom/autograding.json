@@ -1,0 +1,14 @@
+{
+    "tests": [
+      {
+        "name": "Text & Button test",
+        "setup": "npm run-script initTest",
+        "run": "npm run-script testAction",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 5,
+        "points": 3
+      }
+    ]
+  }
