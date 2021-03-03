@@ -44,8 +44,6 @@ export AVD_VERSION=25
 echo "installing image..."
 echo "$ANDROID_HOME"
 ls $ANDROID_HOME
-echo "$ANDROID_HOME/tools/"
-ls $ANDROID_HOME/tools/
 echo "/usr/local/lib/android/sdk/"
 ls /usr/local/lib/android/sdk/
 
