@@ -24,9 +24,9 @@ $ANDROID_HOME/platform-tools/adb start-server
 
 #$ANDROID_HOME/platform-tools/bin/emulator -list-avds
 
-echo 'tools'
-ls $ANDROID_HOME/tools/
-./$ANDROID_HOME/tools/emulator -avd Nexus_10 -netdelay none -netspeed full &
+echo 'tools list:'
+ls $ANDROID_HOME/tools/emulator
+$ANDROID_HOME/tools/emulator -avd Nexus_10 -netdelay none -netspeed full &
 
 server_pid=$!
 output=''
