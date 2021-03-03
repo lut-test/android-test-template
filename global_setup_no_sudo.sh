@@ -44,7 +44,7 @@ npm install --silent -y --save-dev \
 
 #$ANDROID_HOME/tools/avdmanager list
 
-ls $ANDROID_HOME/tools/
+ls $ANDROID_HOME/tools
 echo 'a'
 ls $ANDROID_HOME/tools/bin
 
