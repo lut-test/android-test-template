@@ -46,4 +46,4 @@ echo y | ${ANDROID_HOME}/tools/android -s create avd --force --name android-$AVD
   --device "Nexus S" --name "nexus" --abi "google_apis/x86" --skin WVGA800 >/dev/null
 #  --device "Nexus S" --name "nexus" --abi "default/x86" --skin WVGA800
 
-sudo ./global_setup
+sudo ./global_setup.sh
