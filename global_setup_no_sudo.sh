@@ -44,11 +44,11 @@ npm install --silent -y --save-dev \
 
 #$ANDROID_HOME/tools/avdmanager list
 echo $ANDROID_HOME
-ls $ANDROID_HOME/tools
-echo 'a'
-ls $ANDROID_HOME/tools/bin
+#ls $ANDROID_HOME/tools
+#echo 'a'
+#ls $ANDROID_HOME/tools/bin
 
-$ANDROID_HOME/tools/avdmanager create avd -n kappa -k "system-images;android-25;google_apis;x86"
+$ANDROID_HOME/tools/bin/avdmanager create avd -n kappa -k "system-images;android-25;google_apis;x86"
 
 #echo y | ${ANDROID_HOME}/tools/android -s create avd --force --name android-$AVD_VERSION \
 #  --device "Nexus S" --name "nexus" --abi "google_apis/x86" >/dev/null
