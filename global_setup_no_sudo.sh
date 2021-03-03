@@ -44,6 +44,9 @@ npm install --silent -y --save-dev \
 
 #$ANDROID_HOME/tools/avdmanager list
 
+ls $ANDROID_HOME/tools/
+echo 'a'
+ls $ANDROID_HOME/tools/bin
 
 $ANDROID_HOME/tools/avdmanager create avd -n kappa -k "system-images;android-25;google_apis;x86"
 
