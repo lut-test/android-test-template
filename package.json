@@ -1,0 +1,12 @@
+{
+  "name": "android-pohja",
+  "version": "1.0.0",
+  "description": "Android template for autograding",
+  "main": "test.js",
+  "scripts": {
+    "testInit": "chmod u+x global_setup.sh && ./global_setup.sh && ./global_setup_no_sudo.sh",
+    "testAction": "./run.sh"
+  },
+  "author": "Petteri M",
+  "license": "ISC"
+}
