@@ -15,7 +15,7 @@
 
 #ls $ANDROID_HOME/platform-tools/
 $ANDROID_HOME/platform-tools/adb start-server
-$ANDROID_HOME/platform-tools/adb devices
+#$ANDROID_HOME/platform-tools/adb devices
 
 #xvfb-run emulator64-x86 -avd nexus -netdelay none -netspeed full &
 #xvfb-run emulator64-x86 -avd Nexus_10 -netdelay none -netspeed full &
@@ -24,8 +24,9 @@ $ANDROID_HOME/platform-tools/adb devices
 
 #$ANDROID_HOME/platform-tools/bin/emulator -list-avds
 
+echo 'tools'
 ls $ANDROID_HOME/tools/bin/
-$ANDROID_HOME/tools/bin/emulator -avd Nexus_10 -netdelay none -netspeed full &
+./$ANDROID_HOME/tools/bin/emulator -avd Nexus_10 -netdelay none -netspeed full &
 
 server_pid=$!
 output=''
