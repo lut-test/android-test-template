@@ -27,7 +27,7 @@ $ANDROID_HOME/platform-tools/adb start-server
 echo 'tools list:'
 #ls $ANDROID_HOME/tools/emulator
 $ANDROID_HOME/tools/emulator -list-avds
-$ANDROID_HOME/tools/emulator -avd kappa -netdelay none -netspeed full &
+$ANDROID_HOME/tools/emulator -avd config -netdelay none -netspeed full &
 
 server_pid=$!
 output=''
