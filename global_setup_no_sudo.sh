@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cp test*.js /home/codegrade/
-cp wdio.conf.js /home/codegrade/
+#cp test*.js /home/codegrade/
+#cp wdio.conf.js /home/codegrade/
 
 #Appium
 cd
