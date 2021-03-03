@@ -24,6 +24,7 @@ $ANDROID_HOME/platform-tools/adb start-server
 
 #$ANDROID_HOME/platform-tools/bin/emulator -list-avds
 
+echo $ANDROID_SDK_ROOT
 echo 'tools list:'
 #ls $ANDROID_HOME/tools/emulator
 $ANDROID_HOME/tools/emulator -list-avds
