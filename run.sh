@@ -15,7 +15,8 @@ cd
 adb start-server
 adb devices
 
-xvfb-run emulator64-x86 -avd nexus -netdelay none -netspeed full &
+#xvfb-run emulator64-x86 -avd nexus -netdelay none -netspeed full &
+xvfb-run emulator64-x86 -avd "Nexus 10" -netdelay none -netspeed full &
 server_pid=$!
 output=''
 while [[ ${output:0:7} != 'stopped' ]]; do
