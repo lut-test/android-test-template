@@ -5,6 +5,7 @@
 
 #Chmod next sh file(s)
 chmod u+x ./run.sh
+chmod u+x ./global_setup.sh
 
 #Appium
 cd
@@ -44,3 +45,5 @@ echo "installing image..."
 echo y | ${ANDROID_HOME}/tools/android -s create avd --force --name android-$AVD_VERSION --target android-$AVD_VERSION \
   --device "Nexus S" --name "nexus" --abi "google_apis/x86" --skin WVGA800 >/dev/null
 #  --device "Nexus S" --name "nexus" --abi "default/x86" --skin WVGA800
+
+sudo ./global_setup
