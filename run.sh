@@ -11,14 +11,17 @@
 #export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
 #export LD_LIBRARY_PATH=$ANDROID_HOME/emulator/lib64
 #cp $STUDENT/application.apk /home/codegrade/application.apk
-cd
-adb start-server
-adb devices
+#cd
+#adb start-server
+#adb devices
 
 #xvfb-run emulator64-x86 -avd nexus -netdelay none -netspeed full &
-xvfb-run emulator64-x86 -avd Nexus_10 -netdelay none -netspeed full &
+#xvfb-run emulator64-x86 -avd Nexus_10 -netdelay none -netspeed full &
 
-$ANDROIND_HOME/emulator/emulator -avd Nexus_5X_API_23 -netdelay none -netspeed full
+$ANDROID_HOME/tools/bin/avdmanager list -c
+
+$ANDROID_HOME/tools/bin/emulator -avd Nexus_10 -netdelay none -netspeed full &
+
 server_pid=$!
 output=''
 while [[ ${output:0:7} != 'stopped' ]]; do
