@@ -22,7 +22,7 @@ npm install --silent -y --save-dev \
 export AVD_VERSION=25
 export ANDROID_BUILD_TOOLS_VERSION=25.0.3 
 export SDK_VERSION=25.2.3
-export ANDROID_HOME=/home/codegrade/Android/Sdk
+export ANDROID_HOME=Android/Sdk
 mkdir -p $ANDROID_HOME
 cd $ANDROID_HOME
 wget -q -O tools.zip https://dl.google.com/android/repository/tools_r${SDK_VERSION}-linux.zip > /dev/null && \
