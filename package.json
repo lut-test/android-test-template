@@ -5,7 +5,7 @@
   "main": "test.js",
   "scripts": {
     "initTest": "chmod u+x global_setup_no_sudo.sh && ./global_setup_no_sudo.sh && sudo ./global_setup.sh",
-    "testAction": "./run.sh"
+    "testAction": "sudo ./run.sh"
   },
   "author": "Petteri M",
   "license": "ISC"
