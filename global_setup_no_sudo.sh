@@ -42,9 +42,15 @@ export AVD_VERSION=25
 #echo y | ${ANDROID_HOME}/tools/android -s update sdk --all --force --no-ui --filter android-$AVD_VERSION,sys-img-x86-google_apis-$AVD_VERSION > /dev/null 
 #
 echo "installing image..."
+echo "$ANDROID_HOME"
 ls $ANDROID_HOME
+echo "$ANDROID_HOME/tools/"
 ls $ANDROID_HOME/tools/
-ls $ANDROID_HOME/tools/android/
+echo "/usr/local/lib/android/sdk/"
+ls /usr/local/lib/android/sdk/
+
+
+
 
 echo y | $ANDROID_HOME/tools/android -s create avd --force --name android-$AVD_VERSION --target android-$AVD_VERSION \
   --device "Nexus S" --name "nexus" --abi "google_apis/x86" --skin WVGA800 >/dev/null
