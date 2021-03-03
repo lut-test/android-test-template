@@ -48,7 +48,7 @@ echo $ANDROID_HOME
 #echo 'a'
 #ls $ANDROID_HOME/tools/bin
 $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-25;google_apis;x86_64"
-$ANDROID_HOME/tools/bin/avdmanager create avd -n kappa -k "system-images;android-25;google_apis;x86"
+$ANDROID_HOME/tools/bin/avdmanager create avd -n kappa -k "system-images;android-25;google_apis;x86_64"
 
 #echo y | ${ANDROID_HOME}/tools/android -s create avd --force --name android-$AVD_VERSION \
 #  --device "Nexus S" --name "nexus" --abi "google_apis/x86" >/dev/null
