@@ -4,7 +4,7 @@
   "description": "Android template for autograding",
   "main": "test.js",
   "scripts": {
-    "initTest": "chmod u+x global_setup.sh && ./global_setup.sh && ./global_setup_no_sudo.sh",
+    "initTest": "chmod u+x global_setup_no_sudo.sh && ./global_setup_no_sudo.sh",
     "testAction": "./run.sh"
   },
   "author": "Petteri M",
