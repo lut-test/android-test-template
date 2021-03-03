@@ -12,13 +12,15 @@
 #export LD_LIBRARY_PATH=$ANDROID_HOME/emulator/lib64
 #cp $STUDENT/application.apk /home/codegrade/application.apk
 #cd
-#adb start-server
-#adb devices
+$ANDROID_HOME/tools/bin/adb start-server
+$ANDROID_HOME/tools/bin/adb devices
 
 #xvfb-run emulator64-x86 -avd nexus -netdelay none -netspeed full &
 #xvfb-run emulator64-x86 -avd Nexus_10 -netdelay none -netspeed full &
 
-$ANDROID_HOME/tools/bin/avdmanager list -c
+$ANDROID_HOME/tools/bin/avdmanager list avd -c
+
+$ANDROID_HOME/tools/bin/emulator -list-avds
 
 $ANDROID_HOME/tools/bin/emulator -avd Nexus_10 -netdelay none -netspeed full &
 
