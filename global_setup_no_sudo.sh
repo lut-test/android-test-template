@@ -45,7 +45,8 @@ npm install --silent -y --save-dev \
 #$ANDROID_HOME/tools/bin/avdmanager list
 
 
-#$ANDROID_HOME/tools/bin/avdmanager create avd -n testavd -k "system-images;android-25;google_apis;x86"
+$ANDROID_HOME/tools/bin/avdmanager create avd -n kappa -k "system-images;android-25;google_apis;x86"
+
 #echo y | ${ANDROID_HOME}/tools/android -s create avd --force --name android-$AVD_VERSION \
 #  --device "Nexus S" --name "nexus" --abi "google_apis/x86" >/dev/null
 #  --device "Nexus S" --name "nexus" --abi "default/x86" --skin WVGA800
